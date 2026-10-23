@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000">
+<title>50 · MP Invitaciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Poiret+One&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<main>
+
+<header class="hero">
+  <svg class="arc rv in" viewBox="0 0 400 80" aria-label="Te invito a celebrar mis fabulosos">
+    <defs><path id="arc" d="M20,64 Q200,8 380,52"/><filter id="gl" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="gs" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+    <text class="gs" font-family="Great Vibes,cursive" font-size="26" fill="#fff" style="filter:drop-shadow(0 0 6px rgba(255,255,255,.5))">
+      <textPath href="#arc" textLength="355" lengthAdjust="spacingAndGlyphs">Te invito a celebrar mis fabulosos</textPath></text>
+  </svg>
+
+  <div class="num50 rv in" style="--d:.15s">
+    <i class="halo"></i>
+    <svg viewBox="-20 -10 450 420" role="img" aria-label="50, medio siglo de puro brillo">
+      <defs>
+        <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="-20" y1="0" x2="190" y2="210" spreadMethod="repeat">
+          <stop offset="0" stop-color="#a8741a"/><stop offset=".3" stop-color="#f6d77a"/><stop offset=".55" stop-color="#c58718"/><stop offset=".8" stop-color="#f9e29b"/><stop offset="1" stop-color="#a8741a"/>
+          <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="210 210" dur="6s" repeatCount="indefinite"/>
+        </linearGradient>
+        <clipPath id="w"><ellipse cx="258" cy="253" rx="106" ry="135"/></clipPath>
+        <symbol id="st" viewBox="-50 -50 100 100"><path d="M0-50C2-12 12-2 50 0C12 2 2 12 0 50C-2 12-12 2-50 0C-12-2-2-12 0-50Z"/></symbol>
+      </defs>
+      <!-- Hueco del 0 para la foto: se completa con FOTO en js/main.js (queda vacío si FOTO = "") -->
+      <ellipse cx="258" cy="253" rx="106" ry="135" fill="rgba(0,0,0,.45)"/>
+      <image id="foto" x="152" y="118" width="212" height="270" preserveAspectRatio="xMidYMid slice" clip-path="url(#w)"/>
+      <g filter="url(#gl)"><path fill="url(#g)" fill-rule="evenodd" d="M103 255a157 145 0 1 0 314 0a157 145 0 1 0-314 0ZM152 253a106 135 0 1 0 212 0a106 135 0 1 0-212 0Z"/>
+      <path fill="url(#g)" stroke="url(#g)" stroke-width="1.3" stroke-linejoin="round" d="M73.6 229.3Q55.7 229.3 41.3 223.8Q26.9 218.3 18.5 208.2Q10 198.2 10 184.5Q10 169.4 19 159.7Q27.9 150.1 42.9 150.1Q56.7 150.1 66.3 159Q75.8 168 75.8 182.8Q75.8 192 71.1 199.3Q66.4 206.6 58.9 210.9Q51.3 215.2 42.9 215.2Q36.9 215.2 31.1 211.7Q25.4 208.2 20.6 203Q15.9 197.9 13.1 192.7Q10.3 187.6 10.3 184.5H10.6Q10.6 195.5 15.6 203.6Q20.7 211.7 29 217.1Q37.2 222.4 46.7 225Q56.2 227.6 65.1 227.6Q75.6 227.6 82.6 221.8Q89.7 216.1 93.8 206.7Q98 197.3 99.7 186.5Q101.5 175.7 101.5 165.9Q101.5 149.7 96.7 136.5Q91.9 123.4 83.6 115.7Q75.3 107.9 64.8 107.9Q54.7 107.9 46.9 111.9Q39.2 115.8 34.2 121.3Q29.2 126.8 26.8 131.5H26.2Q28.5 126.2 35.1 119.5Q41.7 112.7 54.2 107.6Q66.7 102.6 86.6 102.6Q108.6 102.6 126.3 109.6Q144.1 116.7 154.5 130.7Q164.8 144.7 164.8 165.9Q164.8 179.5 157.6 191.2Q150.4 202.8 137.8 211.3Q125.2 219.9 108.7 224.6Q92.2 229.3 73.6 229.3ZM25.9 131.5V15H154.5V74.2H27.9V131.5H25.9Z"/>
+      </g>
+      <text filter="url(#gs)" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="30" fill="#f7f3ea"><tspan x="4" y="296">Medio</tspan><tspan x="4" y="328">siglo</tspan><tspan x="4" y="364" font-style="italic">de puro</tspan><tspan x="4" y="396" font-style="italic">brillo</tspan></text>
+      <g fill="#fff3c4" filter="url(#gs)"><use href="#st" class="tw" style="--d:0s" x="277.0" y="-3.0" width="130" height="130"/><use href="#st" class="tw" style="--d:0.9s" x="-37.0" y="160.0" width="90" height="90"/><use href="#st" class="tw" style="--d:1.6s" x="47.0" y="139.0" width="22" height="22"/><use href="#st" class="tw" style="--d:0.5s" x="292.0" y="4.0" width="16" height="16"/><use href="#st" class="tw" style="--d:1.2s" x="400.0" y="128.0" width="20" height="20"/></g>
+    </svg>
+  </div>
+
+  <div class="sig rv in" style="--d:.3s">MP</div>
+  <div class="big gt rv in" style="--d:.4s">Invitaciones</div>
+
+  <button class="vit rv in" id="vit" style="--d:.55s" aria-label="Tocar el disco" aria-pressed="false">
+    <span class="nt">♪</span><span class="nt">♫</span><span class="nt">♪</span>
+    <span class="disco-wrap"><img class="disco" src="img/disco.png" alt="" width="256" height="256"></span>
+    Tocá el disco
+  </button>
+  <i class="hint"></i>
+</header>
+
+<div class="count rv" id="count">
+  <div class="cd"><b>00</b><span>días</span></div><div class="cd"><b>00</b><span>horas</span></div>
+  <div class="cd"><b>00</b><span>min</span></div><div class="cd"><b>00</b><span>seg</span></div>
+</div>
+
+<div class="grid">
+  <section class="card rv">
+    <img class="icon" src="img/iconos/ubicacion.png" alt="" width="256" height="256">
+    <div class="date gt">26 de junio</div>
+    <div class="hs">21:30 hs</div>
+    <div class="place">Estación Juana Castro</div>
+    <div class="addr">Angualasto 1380 norte · Santa Lucía</div>
+    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Angualasto+1380+norte+Santa+Lucia+San+Juan+Argentina">Ver ubicación</a>
+  </section>
+
+  <section class="card rv" style="--d:.12s">
+    <img class="icon" src="img/iconos/vestimenta.png" alt="" width="256" height="256">
+    <div class="txt">Vestimenta<br>elegante sport</div>
+  </section>
+
+  <section class="card rv">
+    <img class="icon" src="img/iconos/confirmar.png" alt="" width="256" height="256">
+    <div class="txt">Confirmar asistencia antes del 15 de junio</div>
+    <a class="btn" id="confirmar" target="_blank" rel="noopener" href="#">Confirmar</a>
+  </section>
+
+  <section class="card rv" style="--d:.12s">
+    <img class="icon" src="img/iconos/regalo.png" alt="" width="256" height="256">
+    <div class="txt">Más allá de tu presencia, y si querés regalarme algo, podés hacerlo al siguiente alias</div>
+    <button class="btn" id="verdatos">Ver datos</button>
+    <div id="datos"><small>Alias · tocá para copiar</small><b id="alias"></b></div>
+  </section>
+</div>
+
+<section class="vid">
+  <div class="cuento gt rv">Cuento con tu presencia</div>
+  <div class="film rv" style="--d:.15s">
+    <video id="vid" autoplay muted loop playsinline preload="auto" src="video/invitacion.mp4"></video>
+  </div>
+  <button class="btn alt snd rv" id="snd">🔇 Activar sonido</button>
+</section>
+
+<footer>Diseño · MP Invitaciones</footer>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
